@@ -6,9 +6,9 @@ This is your direct-to-phone build (v0.1-alpha.15.9, arm64-v8a / armeabi-v7a). A
 
 ## Download
 
-⬇️ **[Download the latest APK (v0.1-alpha.15.9)](https://github.com/Syoolah-Apps/hajj-sonar/releases/latest)**
+⬇️ **[Download the latest APK (v0.1-alpha.15.9)](https://github.com/omar-for-beginners/hajj-sonar/releases/latest)**
 
-[Direct download — hajj-sonar-v0.1-alpha.15.9-release.apk](https://github.com/Syoolah-Apps/hajj-sonar/releases/download/v0.1-alpha.15.9/hajj-sonar-v0.1-alpha.15.9-release.apk) — sideload: enable "Install unknown apps" for your browser/file manager, open the APK, install. No Google account required.
+[Direct download — hajj-sonar-v0.1-alpha.15.9-release.apk](https://github.com/omar-for-beginners/hajj-sonar/releases/download/v0.1-alpha.15.9/hajj-sonar-v0.1-alpha.15.9-release.apk) — sideload: enable "Install unknown apps" for your browser/file manager, open the APK, install. No Google account required.
 
 > The release APK is signed with a local build signature, not a store key. After installing, verify the SHA-256 from the release notes matches what you received.
 
@@ -58,4 +58,4 @@ Alpha. Behaviors may still change; data formats are stabilized but treat backups
 
 ## Repository
 
-Source: this repository (`apps/sonar` is the Android phone app; `core/` holds the Rust engine; `scripts/i18n/` holds the translation pipeline).
+Source code: [omar-for-beginners/hajj-sonar-mobile](https://github.com/omar-for-beginners/hajj-sonar-mobile) (`apps/sonar` is the Android phone app; `core/` holds the Rust engine; `scripts/i18n/` holds the translation pipeline). This repository hosts the signed release builds.
