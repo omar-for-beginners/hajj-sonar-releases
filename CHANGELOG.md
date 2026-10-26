@@ -4,6 +4,26 @@ All notable changes to Hajj Sonar are documented here. This release is the
 "Sonar total rebuilt" — the app's screens, words, safety copy, and flows were
 rebuilt as one coherent pass.
 
+## v0.1-alpha.15.10 — 2026-10-26
+
+### Android
+- Updated English/Arabic copy for share and backup flows, with refreshed QA scenarios.
+- Corrected stale Android smoke checks.
+- Fresh phone APK: version code 33, `com.hajj.sonar`, arm64-v8a / armeabi-v7a.
+
+### Distribution and verification
+- Downloads and release notes now live under `omar-for-beginners/hajj-sonar-releases`.
+  Mobile source remains private; the website links to public downloads instead.
+- APK SHA-256: `a4db252c25073de1fd57313a167427552e9d9c09b6369264d5a9e36e2bd1aa5f`.
+- Signing certificate SHA-256: `15ba9204a57a207540053dce3c812e989a63744f0a2ea323ad32291224df2ffb`.
+  This is the same local debug certificate as 15.9, not a production/store key.
+- Release build, signature verification, zip alignment and translation generation check passed.
+- In-place update from 15.9, cold launch and Arabic onboarding interaction passed
+  on a dedicated Android 16 emulator; account creation and chat were not tested.
+- Firebase/FCM is not configured in this sideloaded alpha, as in 15.9; FCM-dependent
+  wakeups are unavailable.
+- Full Android/Rust test suites and Apple builds were not run for this Android-only release.
+
 ## v0.1-alpha.15.9 — 2026-10-19
 
 ### Localization

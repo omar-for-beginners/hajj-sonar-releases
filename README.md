@@ -2,15 +2,15 @@
 
 **Private, end-to-end-encrypted messaging built for Hajj and Ummah.** No accounts, no phone numbers — your identity is a cryptographic key that never leaves your phone. Talk, coordinate, and pay without handing your data to anyone.
 
-This is your direct-to-phone build (v0.1-alpha.15.9, arm64-v8a / armeabi-v7a). Arabic-first on fresh installs; English and Arabic fully supported.
+This is your direct-to-phone build (v0.1-alpha.15.10, arm64-v8a / armeabi-v7a). Arabic-first on fresh installs; English and Arabic fully supported.
 
 ## Download
 
-⬇️ **[Download the latest APK (v0.1-alpha.15.9)](https://github.com/omar-for-beginners/hajj-sonar-releases/releases/latest)**
+⬇️ **[Download the latest APK (v0.1-alpha.15.10)](https://github.com/omar-for-beginners/hajj-sonar-releases/releases/latest)**
 
-[Direct download — hajj-sonar-v0.1-alpha.15.9-release.apk](https://github.com/omar-for-beginners/hajj-sonar-releases/releases/download/v0.1-alpha.15.9/hajj-sonar-v0.1-alpha.15.9-release.apk) — sideload: enable "Install unknown apps" for your browser/file manager, open the APK, install. No Google account required.
+[Direct download — hajj-sonar-v0.1-alpha.15.10-release.apk](https://github.com/omar-for-beginners/hajj-sonar-releases/releases/download/v0.1-alpha.15.10/hajj-sonar-v0.1-alpha.15.10-release.apk) — sideload: enable "Install unknown apps" for your browser/file manager, open the APK, install. No Google account required.
 
-> The release APK is signed with a local build signature, not a store key. After installing, verify the SHA-256 from the release notes matches what you received.
+> Signed with the same local Android debug certificate as 15.9, not a production/store key. Version code 33 supports an in-place update from 15.9. Verify the APK SHA-256 **before installing**: `a4db252c25073de1fd57313a167427552e9d9c09b6369264d5a9e36e2bd1aa5f`.
 
 ## Features
 
@@ -42,7 +42,7 @@ This is your direct-to-phone build (v0.1-alpha.15.9, arm64-v8a / armeabi-v7a). A
 
 **Reliability and privacy**
 - Encrypted auto-backup on mobile/Wi-Fi rules you set; restore flow with honest scope copy and no destructive surprises
-- Push notifications for messages and wallet events; app lock with device-credential unlock
+- App lock with device-credential unlock; Firebase/FCM push wakeups are not configured in this sideloaded alpha
 - Relay status diagnostics with a truthfulness contract — the app never claims more uptime or privacy than it has
 - No contact upload, no analytics, no third-party SDKs in the message path
 
@@ -58,4 +58,4 @@ Alpha. Behaviors may still change; data formats are stabilized but treat backups
 
 ## Repository
 
-Source code: [omar-for-beginners/hajj-sonar-mobile](https://github.com/omar-for-beginners/hajj-sonar-mobile) (`apps/sonar` is the Android phone app; `core/` holds the Rust engine; `scripts/i18n/` holds the translation pipeline). This repository hosts the signed release builds.
+The mobile source repository is private. This public repository hosts the signed Android builds and release notes.
